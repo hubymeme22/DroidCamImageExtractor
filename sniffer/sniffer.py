@@ -18,7 +18,6 @@ if (len(sys.argv) < 4):
 cameraIP = sys.argv[1]
 cameraPort = sys.argv[2]
 interface = sys.argv[3]
-startTime = time.time()
 
 ImageExtractor: RTPSExtractor.PacketImageExtractor = None
 newPacket = False
