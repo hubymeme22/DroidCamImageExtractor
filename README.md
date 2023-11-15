@@ -6,7 +6,7 @@ This directly connects through the specified ip and port of the droid camera app
 `python3 socketcli.py <camera-ip-address> <camera-port>`
 
 ### Extraction by sniffing packets
-Install the required before using sniffer by: `pip3 install -r sniffer/requirements.txt`
-
+Change directory by: `cd sniffer`
+Install the required before using sniffer by: `pip3 install -r requirements.txt`
 This retrieves the images by listening to specified ip, port, and interface. Note: this **requires root** permission.:
-`sudo python3 sniffer/sniffer.py <camera-ip-address> <camera-port> <interface>`
+`sudo python3 sniffer.py <camera-ip-address> <camera-port> <interface>`
