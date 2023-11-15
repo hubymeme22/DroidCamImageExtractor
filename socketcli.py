@@ -40,5 +40,4 @@ while True:
 		print(f"[+] Image frame saved: {imageCount}")
 
 		# reset the image extractor
-		ImageExtractor = RTPSExtractor.PacketImageExtractor(b'', f"images/image{imageCount}.jpeg")
 		newPacket = False

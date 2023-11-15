@@ -31,7 +31,7 @@ def callback(packet):
 	global imageCount
 	global ImageExtractor
 
-	dataBuffer: bytes = packet[TCP][Raw].load
+	dataBuffer: bytes = packet[Raw].load
 
 	if (RTPSExtractor.isFrameStart(dataBuffer)):
 		ImageExtractor = RTPSExtractor.PacketImageExtractor(dataBuffer, f'images/image_{imageCount}.jpeg')
